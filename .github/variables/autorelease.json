@@ -2,15 +2,15 @@
   "variables": [
     {
       "name": "prefix",
-      "value": "NeverSink's itemfilter - version "
+      "value": "NeverSink's PoE2 Filter - version "
     },
     {
       "name": "version",
-      "value": "0.5.0"
+      "value": "0.52.0a"
     },
     {
       "name": "suffix",
-      "value": "Initial Public Version"
+      "value": "Overseer's Tablets and adjustments"
     }
   ]
 }

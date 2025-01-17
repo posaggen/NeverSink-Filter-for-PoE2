@@ -2,9 +2,54 @@
 ----------------------------------
 PoE2 is currently in an early access. As the game changes and adjusts you can expect large changes in the filter as well. 
 
-Suggestions and feedback is highly welcome! Please take a moment to write in our [DISCORD](https://discord.gg/mye6xhF).
+Suggestions and feedback is highly welcome! Please take a moment to write in our [DISCORD](https://discord.gg/zFEx92a).
 
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
+
+----------------------------------
+# **VERSION 0.52.0a** - Overseer's Tablets and adjustments
+----------------------------------
+
+## SHORT OVERVIEW:
+
+This patch adresses changes in PoE2 patch 0.1.1 and also adds a bit of finetuning here and there.
+Changed "Overseer's Precursor Tablet" to "Overseer Precursor Tablet"
+
+## CHANGES:
+
+- Changed
+- Economy adjusted the tiering of some catalsts, currency, fragments etc
+- Added the new "Overseer's Precursor Tablet"
+- Reworked flasks and crafting sections slightlx to adjust for the new glassblower salvaging change
+- Slightly retiered rare/crafting bases
+- Slightly adjusted the tiering on some salvaging rules
+
+----------------------------------
+# **VERSION 0.52.0** - Overseer's Tablets and adjustments
+----------------------------------
+
+## SHORT OVERVIEW:
+
+This patch adresses changes in PoE2 patch 0.1.1 and also adds a bit of finetuning here and there
+
+## CHANGES:
+
+- Economy adjusted the tiering of some catalsts, currency, fragments etc
+- Added the new "Overseer's Precursor Tablet"
+- Reworked flasks and crafting sections slightlx to adjust for the new glassblower salvaging change
+- Slightly retiered rare/crafting bases
+- Slightly adjusted the tiering on some salvaging rules
+
+----------------------------------
+# **VERSION 0.5.1** - Initial Public Version
+----------------------------------
+
+## SHORT OVERVIEW:
+
+- Removed emerald ring from chancing list
+- Iron Rune tier is hidden on Uber Plus Strict instead of Uber Strict now
+- Added a section to highlight ilvl81+ siphoning and attuned normal wands for crafting, since these are in high demand right now.
+- Fixed multiple dozens of bugs and small improvements for FilterBlade
 
 ----------------------------------
 # **VERSION 0.5.0** - Initial Public Version
@@ -33,6 +78,6 @@ Keep in mind this is just the initial release. The filter will be updated and im
 
 - Tobnac/Haggis for their amazing contribution to the project development and support
 - GGG for the awesome game with a special shoutout to Bex, Chris, Rory, Zeyra and Jatin for their assistance!
-- A massive thank you to all the [PATREONS](https://www.patreon.com/Neversink), [DISCORD](https://discord.gg/mye6xhF) and [TWITCH](https://www.twitch.tv/neversink) community!
+- A massive thank you to all the [PATREONS](https://www.patreon.com/Neversink), [DISCORD](https://discord.gg/zFEx92a) and [TWITCH](https://www.twitch.tv/neversink) community!
 - The FilterBlade Team on discord - Abyxcos, Cdr, Mellontoss, Really Evil bunny, TarrasqueSorcerer, Thesenzei, VenomsAssassin
 - The community (that includes you!) for using the filter and providing feedback and support!

@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile 2
 #===============================================================================================================
-# VERSION:  0.5.0
+# VERSION:  0.52.0a
 # TYPE:     6-UBER-PLUS-STRICT
 # STYLE:    CUSTOMSOUNDS
 # AUTHOR:   NeverSink
@@ -38,7 +38,7 @@
 #------------------------------------
 # For feedback, questions and suggestions please join our discord!
 #
-# DISCORD: https://discord.gg/mye6xhF
+# DISCORD: https://discord.gg/zFEx92a
 # TWITTER: @NeverSinkDev
 # TWITCH:  https://www.twitch.tv/neversink
 # GITHUB:  NeverSinkDev
@@ -259,7 +259,7 @@ Show # $type->chancing $tier->any
 	Mirrored False
 	Corrupted False
 	Rarity Normal
-	BaseType == "Emerald Ring" "Heavy Belt" "Sapphire Ring" "Stellar Amulet"
+	BaseType == "Heavy Belt" "Sapphire Ring" "Stellar Amulet"
 	SetFontSize 40
 	SetBorderColor 0 200 95
 	CustomAlertSound "3uniques.mp3" 300
@@ -294,31 +294,10 @@ Show # $type->chancing $tier->any
 #	SetBorderColor 245 175 0
 #	SetBackgroundColor 10 60 40
 
-#Show # %D4 $type->endgame->flasks $tier->anyhighqualflask
-#	Mirrored False
-#	Corrupted False
-#	Quality >= 15
-#	Rarity Normal Magic
-#	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
-#	AreaLevel >= 65
-#	SetFontSize 40
-#	SetBorderColor 100 100 100
-#	SetBackgroundColor 10 60 40
-
-#Show # %D2 $type->endgame->flasks $tier->anyqualflask
-#	Mirrored False
-#	Corrupted False
-#	Quality >= 1
-#	Rarity Normal Magic
-#	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
-#	AreaLevel >= 65
-#	SetFontSize 38
-#	SetBorderColor 100 100 100
-#	SetBackgroundColor 10 60 40
-
 #Show # %D1 $type->endgame->flasks $tier->earlymappinglifemana
 #	Mirrored False
 #	Corrupted False
+#	Quality 0
 #	ItemLevel >= 65
 #	Rarity Normal Magic
 #	BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
@@ -429,10 +408,18 @@ Show # %D6 $type->endgame->charms $tier->topqualitycharms
 #	SetFontSize 38
 #	SetBorderColor 180 180 180
 
-#Show # %D4 $type->endgame->salvagable $tier->quality2armorany
+#Show # %D5 $type->endgame->salvagable $tier->quality2armorany
 #	Quality >= 10
 #	Rarity Normal Magic
 #	Class == "Body Armours" "Boots" "Foci" "Gloves" "Helmets" "Shields"
+#	AreaLevel >= 65
+#	SetFontSize 38
+#	SetBorderColor 180 180 180
+
+#Show # %D4 $type->endgame->salvagable $tier->quality2flask
+#	Quality >= 10
+#	Rarity Normal Magic
+#	Class == "Life Flasks" "Mana Flasks"
 #	AreaLevel >= 65
 #	SetFontSize 38
 #	SetBorderColor 180 180 180
@@ -455,10 +442,18 @@ Show # %D6 $type->endgame->charms $tier->topqualitycharms
 #	SetFontSize 35
 #	SetBorderColor 127 127 127
 
-#Show # %D3 $type->endgame->salvagable $tier->qualityarmorany
+#Show # %D4 $type->endgame->salvagable $tier->qualityarmorany
 #	Quality >= 1
 #	Rarity Normal Magic
 #	Class == "Body Armours" "Boots" "Foci" "Gloves" "Helmets" "Shields"
+#	AreaLevel >= 65
+#	SetFontSize 35
+#	SetBorderColor 127 127 127
+
+#Show # %D4 $type->endgame->salvagable $tier->qualityflask
+#	Quality >= 1
+#	Rarity Normal Magic
+#	Class == "Life Flasks" "Mana Flasks"
 #	AreaLevel >= 65
 #	SetFontSize 35
 #	SetBorderColor 127 127 127
@@ -649,7 +644,7 @@ Show # $type->endgame->normalcraft->decorator $tier->normaldecoratorjwlry
 #	ItemLevel >= 82
 #	Rarity Normal Magic
 #	Class == "Body Armours" "Boots" "Bows" "Crossbows" "Foci" "Gloves" "Helmets" "One Hand Maces" "Quarterstaves" "Quivers" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-#	BaseType == "Attuned Wand" "Chiming Staff" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Doubled Gauntlets" "Expert Dualstring Bow" "Expert Edged Buckler" "Expert Elite Greathelm" "Expert Feathered Sandals" "Expert Feathered Targe" "Expert Feathered Tiara" "Expert Forlorn Crossbow" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Hexer's Robe" "Expert Hunter Hood" "Expert Hunting Shoes" "Expert Intricate Gloves" "Expert Iron Cuirass" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Lizardscale Boots" "Expert Moulded Mitts" "Expert Omen Crest Shield" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Plumed Focus" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Slicing Quarterstaff" "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Stone Greaves" "Expert Stone Tower Shield" "Expert Studded Vest" "Expert Tribal Mask" "Expert Vaal Cuirass" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Omen Sceptre" "Primed Quiver" "Rattling Sceptre" "Siphoning Wand" "Voltaic Staff"
+#	BaseType == "Attuned Wand" "Chiming Staff" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Cultist Greathammer" "Expert Doubled Gauntlets" "Expert Dualstring Bow" "Expert Edged Buckler" "Expert Elite Greathelm" "Expert Feathered Sandals" "Expert Feathered Targe" "Expert Feathered Tiara" "Expert Forlorn Crossbow" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Hexer's Robe" "Expert Hunter Hood" "Expert Hunting Shoes" "Expert Intricate Gloves" "Expert Iron Cuirass" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Lizardscale Boots" "Expert Moulded Mitts" "Expert Omen Crest Shield" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Plumed Focus" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Slicing Quarterstaff" "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Stone Greaves" "Expert Stone Tower Shield" "Expert Studded Vest" "Expert Tribal Mask" "Expert Vaal Cuirass" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Omen Sceptre" "Primed Quiver" "Rattling Sceptre" "Siphoning Wand" "Voltaic Staff"
 
 #Show # %D2 $type->endgame->normalcraft->any $tier->t2ideallevel
 #	Mirrored False
@@ -657,7 +652,7 @@ Show # $type->endgame->normalcraft->decorator $tier->normaldecoratorjwlry
 #	ItemLevel >= 82
 #	Rarity Normal Magic
 #	Class == "Body Armours" "Boots" "Bows" "Crossbows" "Foci" "Gloves" "Helmets" "One Hand Maces" "Quarterstaves" "Quivers" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-#	BaseType == "Advanced Altar Robe" "Advanced Sacrificial Mantle" "Advanced Scale Mail" "Advanced Scalper's Jacket" "Advanced Serpentscale Coat" "Advanced Vaal Cuirass" "Expert Aged Cuffs" "Expert Antler Focus" "Expert Bolstered Mitts" "Expert Braced Sabatons" "Expert Braced Tower Shield" "Expert Chain Tiara" "Expert Construct Hammer" "Expert Cowled Helm" "Expert Crescent Quarterstaff" "Expert Crescent Targe" "Expert Crystal Focus" "Expert Cultist Greathammer" "Expert Dyad Crossbow" "Expert Face Mask" "Expert Felt Cap" "Expert Firm Bracers" "Expert Frayed Shoes" "Expert Gauze Wraps" "Expert Guarded Helm" "Expert Horned Crown" "Expert Iron Greaves" "Expert Jewelled Gloves" "Expert Jingling Crest Shield" "Expert Laced Boots" "Expert Layered Gauntlets" "Expert Linen Wraps" "Expert Long Quarterstaff" "Expert Mail Sabatons" "Expert Martyr Crown" "Expert Oak Greathammer" "Expert Padded Leggings" "Expert Pelage Targe" "Expert Plated Buckler" "Expert Rampart Tower Shield" "Expert Ringmail Gauntlets" "Expert Riveted Mitts" "Expert Rope Cuffs" "Expert Sectioned Bracers" "Expert Secured Leggings" "Expert Sigil Crest Shield" "Expert Silk Slippers" "Expert Soldier Greathelm" "Expert Sombre Gloves" "Expert Spiked Buckler" "Expert Spired Greathelm" "Expert Steeltoe Boots" "Expert Swathed Cap" "Expert Tense Crossbow" "Expert Threaded Shoes" "Expert Trimmed Greaves" "Expert Veiled Mask" "Expert Warden Bow" "Expert Warpick" "Expert Wicker Tiara" "Expert Wrapped Sandals" "Expert Zealot Bow" "Gelid Staff" "Penetrating Quiver" "Pyrophyte Staff" "Stoic Sceptre" "Visceral Quiver" "Volant Quiver" "Volatile Wand" "Withered Wand"
+#	BaseType == "Advanced Altar Robe" "Advanced Sacrificial Mantle" "Advanced Scale Mail" "Advanced Scalper's Jacket" "Advanced Serpentscale Coat" "Advanced Vaal Cuirass" "Expert Aged Cuffs" "Expert Antler Focus" "Expert Bolstered Mitts" "Expert Braced Sabatons" "Expert Braced Tower Shield" "Expert Chain Tiara" "Expert Construct Hammer" "Expert Cowled Helm" "Expert Crescent Quarterstaff" "Expert Crescent Targe" "Expert Crystal Focus" "Expert Dyad Crossbow" "Expert Face Mask" "Expert Felt Cap" "Expert Firm Bracers" "Expert Frayed Shoes" "Expert Gauze Wraps" "Expert Guarded Helm" "Expert Horned Crown" "Expert Iron Greaves" "Expert Jewelled Gloves" "Expert Jingling Crest Shield" "Expert Laced Boots" "Expert Layered Gauntlets" "Expert Linen Wraps" "Expert Long Quarterstaff" "Expert Mail Sabatons" "Expert Martyr Crown" "Expert Oak Greathammer" "Expert Padded Leggings" "Expert Pelage Targe" "Expert Plated Buckler" "Expert Rampart Tower Shield" "Expert Ringmail Gauntlets" "Expert Riveted Mitts" "Expert Rope Cuffs" "Expert Sectioned Bracers" "Expert Secured Leggings" "Expert Sigil Crest Shield" "Expert Silk Slippers" "Expert Soldier Greathelm" "Expert Sombre Gloves" "Expert Spiked Buckler" "Expert Spired Greathelm" "Expert Steeltoe Boots" "Expert Swathed Cap" "Expert Tense Crossbow" "Expert Threaded Shoes" "Expert Trimmed Greaves" "Expert Veiled Mask" "Expert Warden Bow" "Expert Warpick" "Expert Wicker Tiara" "Expert Wrapped Sandals" "Expert Zealot Bow" "Gelid Staff" "Penetrating Quiver" "Pyrophyte Staff" "Stoic Sceptre" "Visceral Quiver" "Volant Quiver" "Volatile Wand" "Withered Wand"
 
 #Show # $type->endgame->normalcraft->any $tier->t3ideallevel
 #	Mirrored False
@@ -680,6 +675,14 @@ Show # $type->endgame->normalcraft->decorator $tier->normaldecoratorjwlry
 #	Class == "Sceptres"
 #	SetBorderColor 122 87 0
 
+#Show # %D4 $type->endgame->normalcraft->any $tier->craftingwands
+#	Mirrored False
+#	Corrupted False
+#	ItemLevel >= 81
+#	Rarity Normal Magic
+#	BaseType == "Attuned Wand" "Siphoning Wand"
+#	SetBorderColor 122 87 0
+
 #------------------------------------
 #   [0805] Normal, Magic Crafting: Endgame Progression
 #------------------------------------
@@ -690,7 +693,7 @@ Show # $type->endgame->normalcraft->decorator $tier->normaldecoratorjwlry
 #	Corrupted False
 #	Rarity Normal Magic
 #	Class == "Body Armours" "Boots" "Bows" "Crossbows" "Foci" "Gloves" "Helmets" "One Hand Maces" "Quarterstaves" "Quivers" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-#	BaseType == "Attuned Wand" "Chiming Staff" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Doubled Gauntlets" "Expert Dualstring Bow" "Expert Edged Buckler" "Expert Elite Greathelm" "Expert Feathered Sandals" "Expert Feathered Targe" "Expert Feathered Tiara" "Expert Forlorn Crossbow" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Hexer's Robe" "Expert Hunter Hood" "Expert Hunting Shoes" "Expert Intricate Gloves" "Expert Iron Cuirass" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Lizardscale Boots" "Expert Moulded Mitts" "Expert Omen Crest Shield" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Plumed Focus" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Slicing Quarterstaff" "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Stone Greaves" "Expert Stone Tower Shield" "Expert Studded Vest" "Expert Tribal Mask" "Expert Vaal Cuirass" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Omen Sceptre" "Primed Quiver" "Rattling Sceptre" "Siphoning Wand" "Voltaic Staff"
+#	BaseType == "Attuned Wand" "Chiming Staff" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Cultist Greathammer" "Expert Doubled Gauntlets" "Expert Dualstring Bow" "Expert Edged Buckler" "Expert Elite Greathelm" "Expert Feathered Sandals" "Expert Feathered Targe" "Expert Feathered Tiara" "Expert Forlorn Crossbow" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Hexer's Robe" "Expert Hunter Hood" "Expert Hunting Shoes" "Expert Intricate Gloves" "Expert Iron Cuirass" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Lizardscale Boots" "Expert Moulded Mitts" "Expert Omen Crest Shield" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Plumed Focus" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Slicing Quarterstaff" "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Stone Greaves" "Expert Stone Tower Shield" "Expert Studded Vest" "Expert Tribal Mask" "Expert Vaal Cuirass" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Omen Sceptre" "Primed Quiver" "Rattling Sceptre" "Siphoning Wand" "Voltaic Staff"
 #	AreaLevel >= 65
 
 #Show # %D3 $type->endgame->normalcraft->any $tier->t2onlevel
@@ -698,7 +701,7 @@ Show # $type->endgame->normalcraft->decorator $tier->normaldecoratorjwlry
 #	Corrupted False
 #	Rarity Normal Magic
 #	Class == "Body Armours" "Boots" "Bows" "Crossbows" "Foci" "Gloves" "Helmets" "One Hand Maces" "Quarterstaves" "Quivers" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-#	BaseType == "Advanced Altar Robe" "Advanced Sacrificial Mantle" "Advanced Scale Mail" "Advanced Scalper's Jacket" "Advanced Serpentscale Coat" "Advanced Vaal Cuirass" "Expert Aged Cuffs" "Expert Antler Focus" "Expert Bolstered Mitts" "Expert Braced Sabatons" "Expert Braced Tower Shield" "Expert Chain Tiara" "Expert Construct Hammer" "Expert Cowled Helm" "Expert Crescent Quarterstaff" "Expert Crescent Targe" "Expert Crystal Focus" "Expert Cultist Greathammer" "Expert Dyad Crossbow" "Expert Face Mask" "Expert Felt Cap" "Expert Firm Bracers" "Expert Frayed Shoes" "Expert Gauze Wraps" "Expert Guarded Helm" "Expert Horned Crown" "Expert Iron Greaves" "Expert Jewelled Gloves" "Expert Jingling Crest Shield" "Expert Laced Boots" "Expert Layered Gauntlets" "Expert Linen Wraps" "Expert Long Quarterstaff" "Expert Mail Sabatons" "Expert Martyr Crown" "Expert Oak Greathammer" "Expert Padded Leggings" "Expert Pelage Targe" "Expert Plated Buckler" "Expert Rampart Tower Shield" "Expert Ringmail Gauntlets" "Expert Riveted Mitts" "Expert Rope Cuffs" "Expert Sectioned Bracers" "Expert Secured Leggings" "Expert Sigil Crest Shield" "Expert Silk Slippers" "Expert Soldier Greathelm" "Expert Sombre Gloves" "Expert Spiked Buckler" "Expert Spired Greathelm" "Expert Steeltoe Boots" "Expert Swathed Cap" "Expert Tense Crossbow" "Expert Threaded Shoes" "Expert Trimmed Greaves" "Expert Veiled Mask" "Expert Warden Bow" "Expert Warpick" "Expert Wicker Tiara" "Expert Wrapped Sandals" "Expert Zealot Bow" "Gelid Staff" "Penetrating Quiver" "Pyrophyte Staff" "Stoic Sceptre" "Visceral Quiver" "Volant Quiver" "Volatile Wand" "Withered Wand"
+#	BaseType == "Advanced Altar Robe" "Advanced Sacrificial Mantle" "Advanced Scale Mail" "Advanced Scalper's Jacket" "Advanced Serpentscale Coat" "Advanced Vaal Cuirass" "Expert Aged Cuffs" "Expert Antler Focus" "Expert Bolstered Mitts" "Expert Braced Sabatons" "Expert Braced Tower Shield" "Expert Chain Tiara" "Expert Construct Hammer" "Expert Cowled Helm" "Expert Crescent Quarterstaff" "Expert Crescent Targe" "Expert Crystal Focus" "Expert Dyad Crossbow" "Expert Face Mask" "Expert Felt Cap" "Expert Firm Bracers" "Expert Frayed Shoes" "Expert Gauze Wraps" "Expert Guarded Helm" "Expert Horned Crown" "Expert Iron Greaves" "Expert Jewelled Gloves" "Expert Jingling Crest Shield" "Expert Laced Boots" "Expert Layered Gauntlets" "Expert Linen Wraps" "Expert Long Quarterstaff" "Expert Mail Sabatons" "Expert Martyr Crown" "Expert Oak Greathammer" "Expert Padded Leggings" "Expert Pelage Targe" "Expert Plated Buckler" "Expert Rampart Tower Shield" "Expert Ringmail Gauntlets" "Expert Riveted Mitts" "Expert Rope Cuffs" "Expert Sectioned Bracers" "Expert Secured Leggings" "Expert Sigil Crest Shield" "Expert Silk Slippers" "Expert Soldier Greathelm" "Expert Sombre Gloves" "Expert Spiked Buckler" "Expert Spired Greathelm" "Expert Steeltoe Boots" "Expert Swathed Cap" "Expert Tense Crossbow" "Expert Threaded Shoes" "Expert Trimmed Greaves" "Expert Veiled Mask" "Expert Warden Bow" "Expert Warpick" "Expert Wicker Tiara" "Expert Wrapped Sandals" "Expert Zealot Bow" "Gelid Staff" "Penetrating Quiver" "Pyrophyte Staff" "Stoic Sceptre" "Visceral Quiver" "Volant Quiver" "Volatile Wand" "Withered Wand"
 #	AreaLevel >= 65
 #	AreaLevel <= 75
 
@@ -787,7 +790,7 @@ Show # %D6 $type->endgame->jewellery $tier->ringamut1ideallevel
 #	ItemLevel >= 82
 #	Rarity Normal Magic
 #	Class == "Belts"
-#	BaseType == "Plate Belt"
+#	BaseType == "Plate Belt" "Utility Belt"
 #	AreaLevel >= 65
 #	SetFontSize 40
 #	SetBackgroundColor 30 0 70 255
@@ -798,7 +801,7 @@ Show # %D6 $type->endgame->jewellery $tier->ringamut1ideallevel
 #	ItemLevel >= 82
 #	Rarity Normal Magic
 #	Class == "Belts"
-#	BaseType == "Double Belt" "Fine Belt" "Heavy Belt" "Linen Belt" "Long Belt" "Mail Belt" "Ornate Belt" "Rawhide Belt" "Utility Belt" "Wide Belt"
+#	BaseType == "Double Belt" "Fine Belt" "Heavy Belt" "Linen Belt" "Long Belt" "Mail Belt" "Ornate Belt" "Rawhide Belt" "Wide Belt"
 #	AreaLevel >= 65
 #	SetFontSize 40
 
@@ -816,7 +819,7 @@ Show # %D6 $type->endgame->jewellery $tier->ringamut1ideallevel
 #	Corrupted False
 #	Rarity Normal Magic
 #	Class == "Belts"
-#	BaseType == "Plate Belt"
+#	BaseType == "Plate Belt" "Utility Belt"
 #	AreaLevel >= 65
 #	SetFontSize 40
 #	SetBackgroundColor 30 0 70 255
@@ -826,7 +829,7 @@ Show # %D6 $type->endgame->jewellery $tier->ringamut1ideallevel
 #	Corrupted False
 #	Rarity Normal Magic
 #	Class == "Belts"
-#	BaseType == "Double Belt" "Fine Belt" "Heavy Belt" "Linen Belt" "Long Belt" "Mail Belt" "Ornate Belt" "Rawhide Belt" "Utility Belt" "Wide Belt"
+#	BaseType == "Double Belt" "Fine Belt" "Heavy Belt" "Linen Belt" "Long Belt" "Mail Belt" "Ornate Belt" "Rawhide Belt" "Wide Belt"
 #	AreaLevel >= 65
 #	SetFontSize 38
 
@@ -1070,7 +1073,7 @@ Show # %D6 $type->rr->beltseg $tier->t1
 	ItemLevel >= 82
 	Rarity Rare
 	Class == "Belts"
-	BaseType == "Plate Belt"
+	BaseType == "Plate Belt" "Utility Belt"
 	SetFontSize 42
 	SetBackgroundColor 75 75 0
 	PlayEffect Yellow
@@ -1080,7 +1083,7 @@ Show # %D6 $type->rr->beltseg $tier->t1
 #	ItemLevel >= 82
 #	Rarity Rare
 #	Class == "Belts"
-#	BaseType == "Double Belt" "Fine Belt" "Heavy Belt" "Linen Belt" "Long Belt" "Mail Belt" "Ornate Belt" "Rawhide Belt" "Utility Belt" "Wide Belt"
+#	BaseType == "Double Belt" "Fine Belt" "Heavy Belt" "Linen Belt" "Long Belt" "Mail Belt" "Ornate Belt" "Rawhide Belt" "Wide Belt"
 #	SetFontSize 40
 #	SetBackgroundColor 20 20 0 255
 #	PlayEffect Yellow
@@ -1097,7 +1100,7 @@ Show # %D6 $type->rr->beltseg $tier->t1
 #	ItemLevel >= 65
 #	Rarity Rare
 #	Class == "Belts"
-#	BaseType == "Plate Belt"
+#	BaseType == "Plate Belt" "Utility Belt"
 #	SetFontSize 42
 #	SetBackgroundColor 75 75 0
 #	PlayEffect Yellow
@@ -1107,7 +1110,7 @@ Show # %D6 $type->rr->beltseg $tier->t1
 #	ItemLevel >= 65
 #	Rarity Rare
 #	Class == "Belts"
-#	BaseType == "Double Belt" "Fine Belt" "Heavy Belt" "Linen Belt" "Long Belt" "Mail Belt" "Ornate Belt" "Rawhide Belt" "Utility Belt" "Wide Belt"
+#	BaseType == "Double Belt" "Fine Belt" "Heavy Belt" "Linen Belt" "Long Belt" "Mail Belt" "Ornate Belt" "Rawhide Belt" "Wide Belt"
 #	SetFontSize 40
 #	SetBackgroundColor 20 20 0 255
 #	PlayEffect Yellow
@@ -1203,7 +1206,7 @@ Show # %D6 $type->rr->beltseg $tier->t1
 #	ItemLevel >= 82
 #	Rarity Rare
 #	Class == "Body Armours" "Boots" "Bows" "Crossbows" "Foci" "Gloves" "Helmets" "One Hand Maces" "Quarterstaves" "Quivers" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-#	BaseType == "Attuned Wand" "Chiming Staff" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Doubled Gauntlets" "Expert Dualstring Bow" "Expert Edged Buckler" "Expert Elite Greathelm" "Expert Feathered Sandals" "Expert Feathered Targe" "Expert Feathered Tiara" "Expert Forlorn Crossbow" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Hexer's Robe" "Expert Hunter Hood" "Expert Hunting Shoes" "Expert Intricate Gloves" "Expert Iron Cuirass" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Lizardscale Boots" "Expert Moulded Mitts" "Expert Omen Crest Shield" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Plumed Focus" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Slicing Quarterstaff" "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Stone Greaves" "Expert Stone Tower Shield" "Expert Studded Vest" "Expert Tribal Mask" "Expert Vaal Cuirass" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Omen Sceptre" "Primed Quiver" "Rattling Sceptre" "Siphoning Wand" "Voltaic Staff"
+#	BaseType == "Attuned Wand" "Chiming Staff" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Cultist Greathammer" "Expert Doubled Gauntlets" "Expert Dualstring Bow" "Expert Edged Buckler" "Expert Elite Greathelm" "Expert Feathered Sandals" "Expert Feathered Targe" "Expert Feathered Tiara" "Expert Forlorn Crossbow" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Hexer's Robe" "Expert Hunter Hood" "Expert Hunting Shoes" "Expert Intricate Gloves" "Expert Iron Cuirass" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Lizardscale Boots" "Expert Moulded Mitts" "Expert Omen Crest Shield" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Plumed Focus" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Slicing Quarterstaff" "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Stone Greaves" "Expert Stone Tower Shield" "Expert Studded Vest" "Expert Tribal Mask" "Expert Vaal Cuirass" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Omen Sceptre" "Primed Quiver" "Rattling Sceptre" "Siphoning Wand" "Voltaic Staff"
 #	SetFontSize 40
 #	SetBackgroundColor 20 20 0 255
 
@@ -1212,7 +1215,7 @@ Show # %D6 $type->rr->beltseg $tier->t1
 #	ItemLevel <= 81
 #	Rarity Rare
 #	Class == "Body Armours" "Boots" "Bows" "Crossbows" "Foci" "Gloves" "Helmets" "One Hand Maces" "Quarterstaves" "Quivers" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-#	BaseType == "Attuned Wand" "Chiming Staff" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Doubled Gauntlets" "Expert Dualstring Bow" "Expert Edged Buckler" "Expert Elite Greathelm" "Expert Feathered Sandals" "Expert Feathered Targe" "Expert Feathered Tiara" "Expert Forlorn Crossbow" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Hexer's Robe" "Expert Hunter Hood" "Expert Hunting Shoes" "Expert Intricate Gloves" "Expert Iron Cuirass" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Lizardscale Boots" "Expert Moulded Mitts" "Expert Omen Crest Shield" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Plumed Focus" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Slicing Quarterstaff" "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Stone Greaves" "Expert Stone Tower Shield" "Expert Studded Vest" "Expert Tribal Mask" "Expert Vaal Cuirass" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Omen Sceptre" "Primed Quiver" "Rattling Sceptre" "Siphoning Wand" "Voltaic Staff"
+#	BaseType == "Attuned Wand" "Chiming Staff" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Cultist Greathammer" "Expert Doubled Gauntlets" "Expert Dualstring Bow" "Expert Edged Buckler" "Expert Elite Greathelm" "Expert Feathered Sandals" "Expert Feathered Targe" "Expert Feathered Tiara" "Expert Forlorn Crossbow" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Hexer's Robe" "Expert Hunter Hood" "Expert Hunting Shoes" "Expert Intricate Gloves" "Expert Iron Cuirass" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Lizardscale Boots" "Expert Moulded Mitts" "Expert Omen Crest Shield" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Plumed Focus" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Slicing Quarterstaff" "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Stone Greaves" "Expert Stone Tower Shield" "Expert Studded Vest" "Expert Tribal Mask" "Expert Vaal Cuirass" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Omen Sceptre" "Primed Quiver" "Rattling Sceptre" "Siphoning Wand" "Voltaic Staff"
 #	SetFontSize 40
 #	SetBackgroundColor 20 20 0 255
 
@@ -1222,7 +1225,7 @@ Show # %D6 $type->rr->beltseg $tier->t1
 #	ItemLevel >= 82
 #	Rarity Rare
 #	Class == "Body Armours" "Boots" "Bows" "Crossbows" "Foci" "Gloves" "Helmets" "One Hand Maces" "Quarterstaves" "Quivers" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-#	BaseType == "Advanced Altar Robe" "Advanced Sacrificial Mantle" "Advanced Scale Mail" "Advanced Scalper's Jacket" "Advanced Serpentscale Coat" "Advanced Vaal Cuirass" "Expert Aged Cuffs" "Expert Antler Focus" "Expert Bolstered Mitts" "Expert Braced Sabatons" "Expert Braced Tower Shield" "Expert Chain Tiara" "Expert Construct Hammer" "Expert Cowled Helm" "Expert Crescent Quarterstaff" "Expert Crescent Targe" "Expert Crystal Focus" "Expert Cultist Greathammer" "Expert Dyad Crossbow" "Expert Face Mask" "Expert Felt Cap" "Expert Firm Bracers" "Expert Frayed Shoes" "Expert Gauze Wraps" "Expert Guarded Helm" "Expert Horned Crown" "Expert Iron Greaves" "Expert Jewelled Gloves" "Expert Jingling Crest Shield" "Expert Laced Boots" "Expert Layered Gauntlets" "Expert Linen Wraps" "Expert Long Quarterstaff" "Expert Mail Sabatons" "Expert Martyr Crown" "Expert Oak Greathammer" "Expert Padded Leggings" "Expert Pelage Targe" "Expert Plated Buckler" "Expert Rampart Tower Shield" "Expert Ringmail Gauntlets" "Expert Riveted Mitts" "Expert Rope Cuffs" "Expert Sectioned Bracers" "Expert Secured Leggings" "Expert Sigil Crest Shield" "Expert Silk Slippers" "Expert Soldier Greathelm" "Expert Sombre Gloves" "Expert Spiked Buckler" "Expert Spired Greathelm" "Expert Steeltoe Boots" "Expert Swathed Cap" "Expert Tense Crossbow" "Expert Threaded Shoes" "Expert Trimmed Greaves" "Expert Veiled Mask" "Expert Warden Bow" "Expert Warpick" "Expert Wicker Tiara" "Expert Wrapped Sandals" "Expert Zealot Bow" "Gelid Staff" "Penetrating Quiver" "Pyrophyte Staff" "Stoic Sceptre" "Visceral Quiver" "Volant Quiver" "Volatile Wand" "Withered Wand"
+#	BaseType == "Advanced Altar Robe" "Advanced Sacrificial Mantle" "Advanced Scale Mail" "Advanced Scalper's Jacket" "Advanced Serpentscale Coat" "Advanced Vaal Cuirass" "Expert Aged Cuffs" "Expert Antler Focus" "Expert Bolstered Mitts" "Expert Braced Sabatons" "Expert Braced Tower Shield" "Expert Chain Tiara" "Expert Construct Hammer" "Expert Cowled Helm" "Expert Crescent Quarterstaff" "Expert Crescent Targe" "Expert Crystal Focus" "Expert Dyad Crossbow" "Expert Face Mask" "Expert Felt Cap" "Expert Firm Bracers" "Expert Frayed Shoes" "Expert Gauze Wraps" "Expert Guarded Helm" "Expert Horned Crown" "Expert Iron Greaves" "Expert Jewelled Gloves" "Expert Jingling Crest Shield" "Expert Laced Boots" "Expert Layered Gauntlets" "Expert Linen Wraps" "Expert Long Quarterstaff" "Expert Mail Sabatons" "Expert Martyr Crown" "Expert Oak Greathammer" "Expert Padded Leggings" "Expert Pelage Targe" "Expert Plated Buckler" "Expert Rampart Tower Shield" "Expert Ringmail Gauntlets" "Expert Riveted Mitts" "Expert Rope Cuffs" "Expert Sectioned Bracers" "Expert Secured Leggings" "Expert Sigil Crest Shield" "Expert Silk Slippers" "Expert Soldier Greathelm" "Expert Sombre Gloves" "Expert Spiked Buckler" "Expert Spired Greathelm" "Expert Steeltoe Boots" "Expert Swathed Cap" "Expert Tense Crossbow" "Expert Threaded Shoes" "Expert Trimmed Greaves" "Expert Veiled Mask" "Expert Warden Bow" "Expert Warpick" "Expert Wicker Tiara" "Expert Wrapped Sandals" "Expert Zealot Bow" "Gelid Staff" "Penetrating Quiver" "Pyrophyte Staff" "Stoic Sceptre" "Visceral Quiver" "Volant Quiver" "Volatile Wand" "Withered Wand"
 #	SetFontSize 40
 #	SetBackgroundColor 20 20 0 255
 
@@ -1231,7 +1234,7 @@ Show # %D6 $type->rr->beltseg $tier->t1
 #	ItemLevel <= 81
 #	Rarity Rare
 #	Class == "Body Armours" "Boots" "Bows" "Crossbows" "Foci" "Gloves" "Helmets" "One Hand Maces" "Quarterstaves" "Quivers" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-#	BaseType == "Advanced Altar Robe" "Advanced Sacrificial Mantle" "Advanced Scale Mail" "Advanced Scalper's Jacket" "Advanced Serpentscale Coat" "Advanced Vaal Cuirass" "Expert Aged Cuffs" "Expert Antler Focus" "Expert Bolstered Mitts" "Expert Braced Sabatons" "Expert Braced Tower Shield" "Expert Chain Tiara" "Expert Construct Hammer" "Expert Cowled Helm" "Expert Crescent Quarterstaff" "Expert Crescent Targe" "Expert Crystal Focus" "Expert Cultist Greathammer" "Expert Dyad Crossbow" "Expert Face Mask" "Expert Felt Cap" "Expert Firm Bracers" "Expert Frayed Shoes" "Expert Gauze Wraps" "Expert Guarded Helm" "Expert Horned Crown" "Expert Iron Greaves" "Expert Jewelled Gloves" "Expert Jingling Crest Shield" "Expert Laced Boots" "Expert Layered Gauntlets" "Expert Linen Wraps" "Expert Long Quarterstaff" "Expert Mail Sabatons" "Expert Martyr Crown" "Expert Oak Greathammer" "Expert Padded Leggings" "Expert Pelage Targe" "Expert Plated Buckler" "Expert Rampart Tower Shield" "Expert Ringmail Gauntlets" "Expert Riveted Mitts" "Expert Rope Cuffs" "Expert Sectioned Bracers" "Expert Secured Leggings" "Expert Sigil Crest Shield" "Expert Silk Slippers" "Expert Soldier Greathelm" "Expert Sombre Gloves" "Expert Spiked Buckler" "Expert Spired Greathelm" "Expert Steeltoe Boots" "Expert Swathed Cap" "Expert Tense Crossbow" "Expert Threaded Shoes" "Expert Trimmed Greaves" "Expert Veiled Mask" "Expert Warden Bow" "Expert Warpick" "Expert Wicker Tiara" "Expert Wrapped Sandals" "Expert Zealot Bow" "Gelid Staff" "Penetrating Quiver" "Pyrophyte Staff" "Stoic Sceptre" "Visceral Quiver" "Volant Quiver" "Volatile Wand" "Withered Wand"
+#	BaseType == "Advanced Altar Robe" "Advanced Sacrificial Mantle" "Advanced Scale Mail" "Advanced Scalper's Jacket" "Advanced Serpentscale Coat" "Advanced Vaal Cuirass" "Expert Aged Cuffs" "Expert Antler Focus" "Expert Bolstered Mitts" "Expert Braced Sabatons" "Expert Braced Tower Shield" "Expert Chain Tiara" "Expert Construct Hammer" "Expert Cowled Helm" "Expert Crescent Quarterstaff" "Expert Crescent Targe" "Expert Crystal Focus" "Expert Dyad Crossbow" "Expert Face Mask" "Expert Felt Cap" "Expert Firm Bracers" "Expert Frayed Shoes" "Expert Gauze Wraps" "Expert Guarded Helm" "Expert Horned Crown" "Expert Iron Greaves" "Expert Jewelled Gloves" "Expert Jingling Crest Shield" "Expert Laced Boots" "Expert Layered Gauntlets" "Expert Linen Wraps" "Expert Long Quarterstaff" "Expert Mail Sabatons" "Expert Martyr Crown" "Expert Oak Greathammer" "Expert Padded Leggings" "Expert Pelage Targe" "Expert Plated Buckler" "Expert Rampart Tower Shield" "Expert Ringmail Gauntlets" "Expert Riveted Mitts" "Expert Rope Cuffs" "Expert Sectioned Bracers" "Expert Secured Leggings" "Expert Sigil Crest Shield" "Expert Silk Slippers" "Expert Soldier Greathelm" "Expert Sombre Gloves" "Expert Spiked Buckler" "Expert Spired Greathelm" "Expert Steeltoe Boots" "Expert Swathed Cap" "Expert Tense Crossbow" "Expert Threaded Shoes" "Expert Trimmed Greaves" "Expert Veiled Mask" "Expert Warden Bow" "Expert Warpick" "Expert Wicker Tiara" "Expert Wrapped Sandals" "Expert Zealot Bow" "Gelid Staff" "Penetrating Quiver" "Pyrophyte Staff" "Stoic Sceptre" "Visceral Quiver" "Volant Quiver" "Volatile Wand" "Withered Wand"
 #	SetFontSize 38
 #	SetBackgroundColor 35 35 35 240
 
@@ -1240,7 +1243,7 @@ Show # %D6 $type->rr->beltseg $tier->t1
 #	ItemLevel <= 74
 #	Rarity Rare
 #	Class == "Body Armours" "Boots" "Bows" "Crossbows" "Foci" "Gloves" "Helmets" "One Hand Maces" "Quarterstaves" "Quivers" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-#	BaseType == "Advanced Altar Robe" "Advanced Sacrificial Mantle" "Advanced Scale Mail" "Advanced Scalper's Jacket" "Advanced Serpentscale Coat" "Advanced Vaal Cuirass" "Expert Aged Cuffs" "Expert Antler Focus" "Expert Bolstered Mitts" "Expert Braced Sabatons" "Expert Braced Tower Shield" "Expert Chain Tiara" "Expert Construct Hammer" "Expert Cowled Helm" "Expert Crescent Quarterstaff" "Expert Crescent Targe" "Expert Crystal Focus" "Expert Cultist Greathammer" "Expert Dyad Crossbow" "Expert Face Mask" "Expert Felt Cap" "Expert Firm Bracers" "Expert Frayed Shoes" "Expert Gauze Wraps" "Expert Guarded Helm" "Expert Horned Crown" "Expert Iron Greaves" "Expert Jewelled Gloves" "Expert Jingling Crest Shield" "Expert Laced Boots" "Expert Layered Gauntlets" "Expert Linen Wraps" "Expert Long Quarterstaff" "Expert Mail Sabatons" "Expert Martyr Crown" "Expert Oak Greathammer" "Expert Padded Leggings" "Expert Pelage Targe" "Expert Plated Buckler" "Expert Rampart Tower Shield" "Expert Ringmail Gauntlets" "Expert Riveted Mitts" "Expert Rope Cuffs" "Expert Sectioned Bracers" "Expert Secured Leggings" "Expert Sigil Crest Shield" "Expert Silk Slippers" "Expert Soldier Greathelm" "Expert Sombre Gloves" "Expert Spiked Buckler" "Expert Spired Greathelm" "Expert Steeltoe Boots" "Expert Swathed Cap" "Expert Tense Crossbow" "Expert Threaded Shoes" "Expert Trimmed Greaves" "Expert Veiled Mask" "Expert Warden Bow" "Expert Warpick" "Expert Wicker Tiara" "Expert Wrapped Sandals" "Expert Zealot Bow" "Gelid Staff" "Penetrating Quiver" "Pyrophyte Staff" "Stoic Sceptre" "Visceral Quiver" "Volant Quiver" "Volatile Wand" "Withered Wand"
+#	BaseType == "Advanced Altar Robe" "Advanced Sacrificial Mantle" "Advanced Scale Mail" "Advanced Scalper's Jacket" "Advanced Serpentscale Coat" "Advanced Vaal Cuirass" "Expert Aged Cuffs" "Expert Antler Focus" "Expert Bolstered Mitts" "Expert Braced Sabatons" "Expert Braced Tower Shield" "Expert Chain Tiara" "Expert Construct Hammer" "Expert Cowled Helm" "Expert Crescent Quarterstaff" "Expert Crescent Targe" "Expert Crystal Focus" "Expert Dyad Crossbow" "Expert Face Mask" "Expert Felt Cap" "Expert Firm Bracers" "Expert Frayed Shoes" "Expert Gauze Wraps" "Expert Guarded Helm" "Expert Horned Crown" "Expert Iron Greaves" "Expert Jewelled Gloves" "Expert Jingling Crest Shield" "Expert Laced Boots" "Expert Layered Gauntlets" "Expert Linen Wraps" "Expert Long Quarterstaff" "Expert Mail Sabatons" "Expert Martyr Crown" "Expert Oak Greathammer" "Expert Padded Leggings" "Expert Pelage Targe" "Expert Plated Buckler" "Expert Rampart Tower Shield" "Expert Ringmail Gauntlets" "Expert Riveted Mitts" "Expert Rope Cuffs" "Expert Sectioned Bracers" "Expert Secured Leggings" "Expert Sigil Crest Shield" "Expert Silk Slippers" "Expert Soldier Greathelm" "Expert Sombre Gloves" "Expert Spiked Buckler" "Expert Spired Greathelm" "Expert Steeltoe Boots" "Expert Swathed Cap" "Expert Tense Crossbow" "Expert Threaded Shoes" "Expert Trimmed Greaves" "Expert Veiled Mask" "Expert Warden Bow" "Expert Warpick" "Expert Wicker Tiara" "Expert Wrapped Sandals" "Expert Zealot Bow" "Gelid Staff" "Penetrating Quiver" "Pyrophyte Staff" "Stoic Sceptre" "Visceral Quiver" "Volant Quiver" "Volatile Wand" "Withered Wand"
 #	SetFontSize 40
 #	SetBackgroundColor 20 20 0 255
 
@@ -1357,7 +1360,7 @@ Show # %D6 $type->rr->beltseg $tier->t1
 #	SetFontSize 38
 #	SetBorderColor 180 180 180
 
-#Show # %D4 $type->rare->salvagable $tier->quality2armorany
+#Show # %D5 $type->rare->salvagable $tier->quality2armorany
 #	Quality >= 10
 #	ItemLevel >= 65
 #	Rarity Rare
@@ -1383,7 +1386,7 @@ Show # %D6 $type->rr->beltseg $tier->t1
 #	SetFontSize 35
 #	SetBorderColor 127 127 127
 
-#Show # %D3 $type->rare->salvagable $tier->qualityarmorany
+#Show # %D4 $type->rare->salvagable $tier->qualityarmorany
 #	Quality >= 1
 #	ItemLevel >= 65
 #	Rarity Rare
@@ -1448,7 +1451,7 @@ Hide # %H4 $type->sockets->runes $tier->levelingrunes
 	SetTextColor 220 175 132
 	SetBorderColor 220 175 132
 
-#Show # %H5 $type->sockets->runes $tier->t1
+#Show # %H6 $type->sockets->runes $tier->t1
 #	Class == "Socketable"
 #	SetFontSize 42
 #	SetTextColor 0 0 0 255
@@ -1458,7 +1461,7 @@ Hide # %H4 $type->sockets->runes $tier->levelingrunes
 #	PlayEffect White
 #	MinimapIcon 1 Yellow Circle
 
-Hide # %H4 $type->sockets->runes $tier->t2
+Hide # %H5 $type->sockets->runes $tier->t2
 	Class == "Socketable"
 	BaseType == "Iron Rune"
 	SetFontSize 40
@@ -1746,6 +1749,13 @@ Hide # %H3 $type->gems->uncut $tier->othersupporteg
 	SetFontSize 35
 	SetTextColor 20 240 240
 	SetBorderColor 20 240 240
+
+# Hider for filterblade
+
+Hide # $type->gems->uncut $tier->exhide
+	BaseType == "Uncut Skill Gem" "Uncut Spirit Gem" "Uncut Support Gem"
+	SetFontSize 18
+	SetBackgroundColor 20 20 0 0
 
 # !! Waypoint c8.gems.others : "Gems - Specific"
 
@@ -2167,7 +2177,7 @@ Show # $type->currency $tier->s
 
 Show # $type->currency $tier->a
 	Class == "Stackable Currency"
-	BaseType == "Greater Jeweller's Orb" "Orb of Annulment" "Orb of Chance"
+	BaseType == "Greater Jeweller's Orb" "Orb of Chance"
 	SetFontSize 45
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
@@ -2178,7 +2188,7 @@ Show # $type->currency $tier->a
 
 Show # $type->currency $tier->b
 	Class == "Stackable Currency"
-	BaseType == "Chaos Orb" "Exotic Coinage" "Gemcutter's Prism"
+	BaseType == "Chaos Orb" "Exotic Coinage" "Orb of Annulment"
 	SetFontSize 42
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -2189,7 +2199,7 @@ Show # $type->currency $tier->b
 
 Show # $type->currency $tier->c
 	Class == "Stackable Currency"
-	BaseType == "Exalted Orb" "Glassblower's Bauble"
+	BaseType == "Exalted Orb" "Gemcutter's Prism"
 	SetFontSize 42
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -2200,7 +2210,7 @@ Show # $type->currency $tier->c
 
 Hide # %H5 $type->currency $tier->d
 	Class == "Stackable Currency"
-	BaseType == "Armourer's Scrap" "Artificer's Orb" "Chance Shard" "Lesser Jeweller's Orb" "Orb of Alchemy" "Regal Orb" "Vaal Orb"
+	BaseType == "Armourer's Scrap" "Artificer's Orb" "Chance Shard" "Glassblower's Bauble" "Lesser Jeweller's Orb" "Orb of Alchemy" "Regal Orb" "Vaal Orb"
 	SetFontSize 40
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -2241,7 +2251,7 @@ Hide # %H1 $type->currency $tier->supplieslow
 
 Hide # $type->currency $tier->exhide
 	Class == "Stackable Currency"
-	BaseType == "Alchemy Shard" "Arcanist's Etcher" "Armourer's Scrap" "Artificer's Orb" "Artificer's Shard" "Black Scythe Artifact" "Blacksmith's Whetstone" "Broken Circle Artifact" "Chance Shard" "Chaos Orb" "Exalted Orb" "Exotic Coinage" "Gemcutter's Prism" "Glassblower's Bauble" "Lesser Jeweller's Orb" "Orb of Alchemy" "Orb of Augmentation" "Orb of Transmutation" "Order Artifact" "Regal Orb" "Regal Shard" "Scroll of Wisdom" "Sun Artifact" "Transmutation Shard" "Vaal Orb"
+	BaseType == "Alchemy Shard" "Arcanist's Etcher" "Armourer's Scrap" "Artificer's Orb" "Artificer's Shard" "Black Scythe Artifact" "Blacksmith's Whetstone" "Broken Circle Artifact" "Chance Shard" "Chaos Orb" "Exalted Orb" "Exotic Coinage" "Gemcutter's Prism" "Glassblower's Bauble" "Lesser Jeweller's Orb" "Orb of Alchemy" "Orb of Annulment" "Orb of Augmentation" "Orb of Transmutation" "Order Artifact" "Regal Orb" "Regal Shard" "Scroll of Wisdom" "Sun Artifact" "Transmutation Shard" "Vaal Orb"
 	SetFontSize 18
 	SetBackgroundColor 20 20 0 0
 
@@ -2365,19 +2375,20 @@ Show # $type->currency->emotions $tier->restex
 #	PlayEffect Yellow
 #	MinimapIcon 1 Yellow Circle
 
-#Show # %H6 $type->currency->catalysts $tier->c
-#	Class == "Stackable Currency"
-#	SetFontSize 42
-#	SetTextColor 0 0 0 255
-#	SetBorderColor 0 0 0 255
-#	SetBackgroundColor 245 139 87 255
-#	CustomAlertSound "2currency.mp3" 300
-#	PlayEffect White
-#	MinimapIcon 1 Yellow Circle
+Show # %H6 $type->currency->catalysts $tier->c
+	Class == "Stackable Currency"
+	BaseType == "Adaptive Catalyst"
+	SetFontSize 42
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 245 139 87 255
+	CustomAlertSound "2currency.mp3" 300
+	PlayEffect White
+	MinimapIcon 1 Yellow Circle
 
 Hide # %HS4 $type->currency->catalysts $tier->d
 	Class == "Stackable Currency"
-	BaseType == "Adaptive Catalyst" "Neural Catalyst"
+	BaseType == "Esh's Catalyst" "Neural Catalyst" "Reaver Catalyst" "Skittering Catalyst" "Tul's Catalyst"
 	SetFontSize 40
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -2385,7 +2396,7 @@ Hide # %HS4 $type->currency->catalysts $tier->d
 
 Hide # %HS2 $type->currency->catalysts $tier->e
 	Class == "Stackable Currency"
-	BaseType == "Carapace Catalyst" "Chayula's Catalyst" "Esh's Catalyst" "Flesh Catalyst" "Reaver Catalyst" "Sibilant Catalyst" "Skittering Catalyst" "Tul's Catalyst" "Uul-Netol's Catalyst" "Xoph's Catalyst"
+	BaseType == "Carapace Catalyst" "Chayula's Catalyst" "Flesh Catalyst" "Sibilant Catalyst" "Uul-Netol's Catalyst" "Xoph's Catalyst"
 	SetFontSize 40
 	SetTextColor 240 207 132
 	SetBorderColor 240 207 132
@@ -2695,7 +2706,7 @@ Show # $type->fragments->generic $tier->b
 	MinimapIcon 1 Yellow Hexagon
 
 Show # $type->fragments->generic $tier->c
-	BaseType == "Breach Precursor Tablet" "Delirium Precursor Tablet" "Expedition Precursor Tablet"
+	BaseType == "Breach Precursor Tablet" "Delirium Precursor Tablet" "Expedition Precursor Tablet" "Overseer Precursor Tablet"
 	SetFontSize 42
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -2721,7 +2732,7 @@ Show # $type->fragments->generic $tier->d
 #	MinimapIcon 2 Grey Hexagon
 
 Hide # $type->fragments->generic $tier->exhide
-	BaseType == "Breach Precursor Tablet" "Delirium Precursor Tablet" "Expedition Precursor Tablet" "Precursor Tablet" "Ritual Precursor Tablet"
+	BaseType == "Breach Precursor Tablet" "Delirium Precursor Tablet" "Expedition Precursor Tablet" "Overseer Precursor Tablet" "Precursor Tablet" "Ritual Precursor Tablet"
 	SetFontSize 18
 	SetBackgroundColor 20 20 0 0
 
@@ -2998,6 +3009,14 @@ Show # $type->uniques $tier->restex
 #	SetFontSize 40
 #	SetBorderColor 180 180 180
 
+#Show # %D5 $type->leveling->salvagable $tier->quality2flask
+#	Quality >= 10
+#	Rarity Normal Magic
+#	Class == "Life Flasks" "Mana Flasks"
+#	AreaLevel < 65
+#	SetFontSize 40
+#	SetBorderColor 180 180 180
+
 # Single Quality Currencies
 
 #Show # %D4 $type->leveling->salvagable $tier->qualitymartialany
@@ -3020,6 +3039,14 @@ Show # $type->uniques $tier->restex
 #	Quality >= 1
 #	Rarity Normal Magic
 #	Class == "Body Armours" "Boots" "Foci" "Gloves" "Helmets" "Shields"
+#	AreaLevel < 65
+#	SetFontSize 40
+#	SetBorderColor 180 180 180
+
+#Show # %D4 $type->leveling->salvagable $tier->qualityflask
+#	Quality >= 1
+#	Rarity Normal Magic
+#	Class == "Life Flasks" "Mana Flasks"
 #	AreaLevel < 65
 #	SetFontSize 40
 #	SetBorderColor 180 180 180
@@ -3103,31 +3130,6 @@ Hide # %H0 $type->hidelayer $tier->outdatedlevelflaske
 # [[3300]] Leveling - Life Mana Flasks
 #===============================================================================================================
 # !! Waypoint c20.leveling.flasks.qual : "Leveling - Quality Flasks"
-
-#Show # %D5 $type->leveling->flasks->quality $tier->max
-#	Quality >= 20
-#	Rarity Normal Magic
-#	Class == "Charms" "Life Flasks" "Mana Flasks"
-#	SetFontSize 38
-#	SetBorderColor 180 180 180
-#	SetBackgroundColor 10 60 40
-
-#Show # %D4 $type->leveling->flasks->quality $tier->high
-#	Quality >= 14
-#	Rarity Normal Magic
-#	Class == "Charms" "Life Flasks" "Mana Flasks"
-#	SetFontSize 38
-#	SetBorderColor 180 180 180
-#	SetBackgroundColor 10 60 40
-
-#Show # %D3 $type->leveling->flasks->quality $tier->any
-#	Quality >= 1
-#	Rarity Normal Magic
-#	Class == "Charms" "Life Flasks" "Mana Flasks"
-#	SetFontSize 38
-#	SetBorderColor 100 100 100
-#	SetBackgroundColor 10 60 40
-
 #------------------------------------
 #   [3301] Life flasks
 #------------------------------------

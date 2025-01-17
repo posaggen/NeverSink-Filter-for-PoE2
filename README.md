@@ -3,15 +3,15 @@
 ## **QUICK START:**
 
 This is an "ItemFilter" - a script for the game Path of Exile 2 (not PoE1!). It highlights valuable items, and enhances gameplay comfort and experience.
-This is _NOT_ a hack/mod. It written using the official POE filter domain language. This script (NeverSink's Filter) is shipped on the console versions of the game.
+This is _NOT_ a hack/mod. It written using the official POE filter domain language.
 
 This is my full filter for PoE2 and a successor to my initial lite-filter.
 
-![image](https://github.com/user-attachments/assets/8a8addae-5bcf-44f6-8144-c163e04b821a)
+![image](https://github.com/user-attachments/assets/41f7ab1f-18f7-4283-82f4-12b68cd519bd)
 
 Feature highlights
 
-- The filter comes with a companion website: [FilterBlade.xyz](https://filterblade.xyz). FilterBlade allows modifying, previewing and customizing the filter to your needs and to your specific build. It's also a great way to learn what the filter can do and it's many features/colors.
+- The filter comes with a companion website: [FilterBlade.xyz](https://filterblade.xyz). FilterBlade allows modifying, previewing and customizing the filter to your needs and to your specific build. It's also a great way to learn what the filter can do and its many features/colors.
 - 7 levels of strictness ranging from soft to uber-plus-strict (semi-strict is recommended for beginners). These define the number of items hidden. A higher strictness filter shows fewer items. Very Strict or above should not be used while leveling, unless you're twinked out in leveling gear.
 - Item colors, map icons and beams are clustered in a way to make item recognition really easy and minimize the cognitive efforts required to make good decisions. Plus due to the reuse of similar patterns it's good for your dopamin-on-drop-maxing.
 - added first alternative style: Dark Mode
