@@ -7,6 +7,71 @@ Suggestions and feedback is highly welcome! Please take a moment to write in our
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
 
 ----------------------------------
+# **VERSION 0.7.0** - Dawn of the Hunt
+----------------------------------
+
+## SHORT OVERVIEW:
+
+All of the Dawn of the Hunt content and also improves upon the existing sections, such as economy tiering, gems etc. 
+It also comes with a new style: Zen! Happy hunting!
+
+## NEW CONTENT:
+- Added all of the dawn of the hunt basetypes
+- Added a kalandra jewellery section
+- Added new style: Zen! Minimal, clean and great for customizing.
+- Added a new vault key section (reqliquary keys). They all make the SHWING sound for now!
+- Added spear and buckler relevant sections and classes
+- Renamed all the advanced and expert bases according to GGG's migration table
+- Added the new omens to the tierlist. I suspect they're mostly there to clutter up the omen pool, since every ritual now has an omen. They should be all fairly low tier according to poe2db description.
+
+## LARGE REWORKS:
+- Reworked the gem section
+- Reworked the socketable section (merged it soulcores and runes and added better campaign overrides)
+
+## TIERING:
+- Retiered all uniques and added some to the early league tier
+- Retiered all the currencies by hand for the new league (until economy data is available and reliable)
+- Moved many S tier items into A tier (until economy data is available and reliable)
+- Moved catalysts up by one tier
+- Moved stellar amulet a tier down in temrs of chancing. Moved sapphire ring a tier down.
+- Adjusted the basetype tiering
+
+## COMING SOON:
+- Added advanced economy tiering sections and rules for SC/HC. THose will be enabled in a couple of days, once I'm sure it'll work (too risky for release)
+
+----------------------------------
+# **VERSION 0.6.0** - Finetuning
+----------------------------------
+
+## SHORT OVERVIEW:
+
+This patch introduces multiple new rules and features and also reintroduces economy-based updates and improved tiering
+
+## CHANGES:
+
+- TODO: one more special map type tier (maybe 2 for S tier class things)
+
+- Added 2 more rules for chancing. A high tier chancing rule (sapphire ring) and a super-tier chancing rule (stellar amulet) that produces a shwing sound/highlight on drop. From the eyes of a PoE1 player this is blasphemy.
+- Added new rules for T15+ 8moded maps and T14+, T11+ delirium maps
+- The T15+ 8moded map, T14+ delirium map and T16+ maps rules now have a new visual
+- Reworked visuals for lower delirium/8mod maps
+- Added a dedicated rule for logbooks that can't spawn olroth (ilvl77) with a lower visual
+- Addded the gem progressino that gives the desirable gem level drops more highlight while progressing through the campaign
+- Added a new rule to the maps, that allows still showing RARE maps of low tiers, even if they are disabled otherwise
+- The splinter currency sound is now less loud compared to the other rules
+- The highest strictness no longer shows single splinters on the minimap or plays any sound for them
+- Salvaging bases (quality armors etc), now have less priority than normal/magic crafting bases
+- The barya rule that highlighted baryas 75-79, now highlights 60-79
+- 'Futureproofed' the artificer salvage rules to define 'large' as 4x1, 4x2 and 3x2 items
+- Removed the dropsound from baryas and ultimatum keys that can NOT grant you the third ascendancy and increased their strictness filtering
+- Split the special 'run in progress' Djinn barya rule into 
+- Adjusted some font sizes during early campaign for magic items
+- Strict no longer hides lower (1-6) waystones. Very strict now removes icons/sounds of Tier 1-13 the waystones and uber-strict hides all 1-13 waystones.
+
+## MISC CHANGES:
+- Maps now have a dedicated hide rule. Maps are now disabled instead of hidden on higher strictnesses (has no practical ingame effect, but allows for more filterblade editing).
+
+----------------------------------
 # **VERSION 0.52.0a** - Overseer's Tablets and adjustments
 ----------------------------------
 

@@ -3,17 +3,32 @@ template: |
   
   ## SHORT OVERVIEW:
   
-  This patch adresses changes in PoE2 patch 0.1.1 and also adds a bit of finetuning here and there.
-  Changed "Overseer's Precursor Tablet" to "Overseer Precursor Tablet"
+  All of the Dawn of the Hunt content and also improves upon the existing sections, such as economy tiering, gems etc.
+  It also comes with a new style: Zen! Happy hunting!
   
-  ## CHANGES:
+  ## NEW CONTENT:
+  - Added all of the dawn of the hunt basetypes
+  - Added a kalandra jewellery section
+  - Added new style: Zen! Minimal, clean and great for customizing.
+  - Added a new vault key section (reqliquary keys). They all make the SHWING sound for now!
+  - Added spear and buckler relevant sections and classes
+  - Renamed all the advanced and expert bases according to GGG's migration table
+  - Added the new omens to the tierlist. I suspect they're mostly there to clutter up the omen pool, since every ritual now has an omen. They should be all fairly low tier according to poe2db description.
   
-  - Changed
-  - Economy adjusted the tiering of some catalsts, currency, fragments etc
-  - Added the new "Overseer's Precursor Tablet"
-  - Reworked flasks and crafting sections slightlx to adjust for the new glassblower salvaging change
-  - Slightly retiered rare/crafting bases
-  - Slightly adjusted the tiering on some salvaging rules
+  ## LARGE REWORKS:
+  - Reworked the gem section
+  - Reworked the socketable section (merged it soulcores and runes and added better campaign overrides)
+  
+  ## TIERING:
+  - Retiered all uniques and added some to the early league tier
+  - Retiered all the currencies by hand for the new league (until economy data is available and reliable)
+  - Moved many S tier items into A tier (until economy data is available and reliable)
+  - Moved catalysts up by one tier
+  - Moved stellar amulet a tier down in temrs of chancing. Moved sapphire ring a tier down.
+  - Adjusted the basetype tiering
+  
+  ## COMING SOON:
+  - Added advanced economy tiering sections and rules for SC/HC. THose will be enabled in a couple of days, once I'm sure it'll work (too risky for release)
   
   ------
 
