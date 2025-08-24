@@ -7,6 +7,152 @@ Suggestions and feedback is highly welcome! Please take a moment to write in our
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
 
 ----------------------------------
+# **VERSION 0.7.9a** - Rune hotfix
+----------------------------------
+
+Fixed a bug introduced in 0.7.9 that led to low tier endgame runes ('greater adept rune') not showing correctly.
+
+----------------------------------
+# **VERSION 0.7.9** - Major Tiering Improvements (Economy only)
+----------------------------------
+
+## SHORT OVERVIEW:
+The state of the PoE2 economy is currently very chaotic and messy due to the late-league state and the large number of highly invasive changes.
+
+This patch focuses on hardening the filter economy based tiering to deal with such messy states and also prepare it for the upcoming league.
+
+## CHANGES:
+- Massive overhauls to the economy based tiering. Guardrails, aspects, threshold adjustments, additional sources etc. have all been used to improve the current system
+- Vastly adjusted the practical (economy versions only) tiering for: currency, uniques, omens, socketables, fragments
+- The socketable item tiering now treats runes, talismans and soul cores in the same way.
+- Reworked leveling rune implementation and tiering
+- Other Minor adjustments
+
+----------------------------------
+# **VERSION 0.7.8b** - New Socketable Finetuning
+----------------------------------
+
+- The leveling rules for general armor highlight no longer highlight foci/bucklers as these have their own dedicated rules
+
+----------------------------------
+# **VERSION 0.7.8a** - New Socketable Finetuning
+----------------------------------
+
+## SHORT OVERVIEW:
+Improved initial tiering of the new socketables and added the 9 new uniques to the tierlists to get more of those satisfying shwing sounds. 
+
+All items will be connected to the economy data, once it's available.
+
+----------------------------------
+# **VERSION 0.7.8** - New Socketables
+----------------------------------
+
+## SHORT OVERVIEW:
+I quickly emergency added all new runes, talismans and sockets into the filter. All new socketables are A-tiered for now, with the hedgewitch being S-tier.
+Additionally I've adjusted the economy based tiering to match the buffed PoE2 "Mythic" uniques to be stronger.
+
+Finally, while I don't know all of the new added uniques, the filter has been built in a way to always highlight unknown or new unique bases. So the new uniques should be highlighted in a 'error-pink' color, usually indicating that the unique is unknown. 
+
+On a side note, this PoE2 patch dropping exactly during the PoE1 patch notes, with no previous item info. So expect more finetuning tomorrow, once all the items have been found and revealed.
+
+----------------------------------
+# **VERSION 0.7.7a** - Classes added to item tiers
+----------------------------------
+
+## SHORT OVERVIEW:
+The tiered overrides now all come with class requirements. This excludes precursor tablets and similar gear from accidently getting caught.
+
+----------------------------------
+# **VERSION 0.7.7** - Unidentified Item Tier
+----------------------------------
+
+## SHORT OVERVIEW:
+
+Introduced the new command 'UnidentifiedItemTier' into the filter. This command allows highlighting rare/magic items with the suffix (tier X).
+The initial implementation is a bit rough. It focuses on providing large scale highlight for high tier items and removes them from being hidden.
+
+Additionally you can customize this property pretty much everywhere on filterblade.
+
+You can expect a more thorough and implementation in the next league, that will likely break some existing changes.
+
+## CHANGES:
+- Added a new section "HighModtier"
+- The optional "ConditionalHiders" by default never hides items above Tier 3.
+- Introduced the UnidentifiedItemTier command in other niche spots, where it makes sense.
+- Restructured the filter a bit to make it ensure that crafting/hiding/tier highlights are playing nicely together.
+
+----------------------------------
+# **VERSION 0.7.6** - Tiering Improvements
+----------------------------------
+
+## SHORT OVERVIEW:
+
+Talismans are now fully economy tiered!
+
+----------------------------------
+# **VERSION 0.7.5** - TEN YEAR UPDATE
+----------------------------------
+
+## SHORT OVERVIEW:
+
+Ten years ago the first version of the filter was released. This update is a celebration of that. 
+
+To celebrate that, we've added a new style - "COBALT".
+
+Also there's further improvements to tiering and economy treatment!
+
+----------------------------------
+# **VERSION 0.7.4** - Tiering and Economy Update
+----------------------------------
+
+## SHORT OVERVIEW:
+
+This update focuses on further improving the tiering rules in the filter. If all goes well, starting with this update and the next days filterblade will have economy updated versions again.
+
+## CHANGES:
+- Further added safeguards to the automated tiering algorithm
+- Tiered all economy based tierlists again
+- Added all unique tablets to the filter (currently all in T2)
+- Added the Rampart Tower Shield as a chancing base
+- Further adjusted the architecture changes done in 0.7.2 to help with the sorting of rules
+
+----------------------------------
+# **VERSION 0.7.3** - New Rune Update
+----------------------------------
+
+## SHORT OVERVIEW:
+
+Added the new Adept, Robust and Resolve runes.
+
+----------------------------------
+# **VERSION 0.7.2** - Economy Update
+----------------------------------
+
+## SHORT OVERVIEW:
+
+This is a filterblade only patch. 
+
+For filterblade only: the salvagable item section is now higher priority than the crafting item hiders to make editing the filter easier!
+
+----------------------------------
+# **VERSION 0.7.1** - Economy Update
+----------------------------------
+
+## SHORT OVERVIEW:
+
+This update is 100% all about the tiering.
+
+Unique, core, essence, currency, omen, fragment tiering has been adjust to better match the current economy.
+I've also added a ton of safeguards and special treatment to all of the new uniques and items in hopes of minimizing issues.
+
+The economy-versions on FilterBlade will be reenabled and the auto-update as well over the next 2-3 days, if my internal tests all run stable (don't want to expose you to bad filters!).
+
+## CHANGES:
+- Adjusted the tiering and tiering algorithms in all tierlists
+- Moved Seaglass spear into the highest tier
+- Added the acrid wand to filterblade (was in the filter already, just missing from filterblade)
+
+----------------------------------
 # **VERSION 0.7.0** - Dawn of the Hunt
 ----------------------------------
 
@@ -33,7 +179,7 @@ It also comes with a new style: Zen! Happy hunting!
 - Retiered all the currencies by hand for the new league (until economy data is available and reliable)
 - Moved many S tier items into A tier (until economy data is available and reliable)
 - Moved catalysts up by one tier
-- Moved stellar amulet a tier down in temrs of chancing. Moved sapphire ring a tier down.
+- Moved Stellar amulet a tier down in the chancing tierlist. Moved Sapphire ring a tier down.
 - Adjusted the basetype tiering
 
 ## COMING SOON:
