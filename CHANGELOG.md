@@ -7,6 +7,54 @@ Suggestions and feedback is highly welcome! Please take a moment to write in our
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
 
 ----------------------------------
+# **VERSION 0.8** - Third Edict Update
+----------------------------------
+
+## NEW CONTENT:
+- Purged all renamed and removed items from the filter
+- Added new essences, currencies, omens, fragments, splinters, calamity fragments, socketables and others to the filter
+- Tiered in all the new basetypes
+- Added a new tierlist for lineage gems
+
+## RARE TIERING AND UNIDENTIFIED TIERED ITEMS:
+
+- In all endgame sections Belts+Rings+Amulets have been merged to reduce complexity.
+- In all endgame sections Belts+Rings+Amulets now have 4 tiers instead of 3
+- Removed the previous UnidentifiedItemTier rules.
+- The unidentified item tier system has been merged into the general rare/magic tiering.
+- Added a new system of Unidentified rules that covers explicit cases for Every magic/rare item for Ranks A,B,C and Tiers 2,3,4+. The result is a comprhensive system that works with all strictnesses and is completely adjusted from the tiering section on filterblade.
+- Added extra rules for highlighting any T4 and any T5 item. These are designed to highlight low rank items and also act as a safeguard.
+
+## LEVELING ADJUSTMENTS:
+
+- Items below arealevel 3 now have additional highlight
+- Reduced the highlight of catch-all rules for magic and normal items. The intent is for them to be less highlighted on higher strictnesses and also work better with the new FilterBlade build-auto-adjuster
+- Added dedicated rules for Shields highlighting to allow for better customization
+
+## IDENTIFIED MODS:
+
+- Identified items use a new theme
+- Introduced a set of identified mod rules. These are currently designed to spot items with valuable chase mods for general and more importantly recombinator crafting (such as 35% movement speed, +3 amulets, high tier phys damage weapons etc). I expect many of these drops to sell well. Once the meta has settled I'll the PoE1-styled combo rules as well.
+
+## EXCEPTIONAL ITEMS:
+
+- Added a set of rules to find valuable overquality/oversocketed (exceptional) items.
+- Added a set of rules to find overquality/oversocketed items that are chance bases
+- Added a set of rules to detect overquality/oversocketed UNIQUE items
+
+## ARCHITECTURE IMPROVEMENTS & MINOR CHANGES: 
+- A lot of small filter structure and style adjustments
+- Built additional tooling for economy tiering improvements to better deal with outliers and anomalies
+- Expanded my language model to support full themes in a better way
+- Added new tooling to better scour all files from outdated items
+
+----------------------------------
+# **VERSION 0.7.9b** - Hotfixes and further changes
+----------------------------------
+
+More adjustments to economy, tiering and other minor fixes
+
+----------------------------------
 # **VERSION 0.7.9a** - Rune hotfix
 ----------------------------------
 
