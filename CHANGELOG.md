@@ -7,6 +7,41 @@ Suggestions and feedback is highly welcome! Please take a moment to write in our
 Major thanks to all patreon supports to help us fund the continious development. [Patreon](https://www.patreon.com/Neversink) supporters.
 
 ----------------------------------
+# **VERSION 0.8.2a** - Tiering changes
+----------------------------------
+
+- Adjusted normal/magic/rare basetype tiering for body armors
+- Adjusted chance bases
+- Hide rules for gear are now located correctly (for filterblade users)
+
+----------------------------------
+# **VERSION 0.8.2** - Economy update for Abyss
+----------------------------------
+
+## ECONOMY RELATED CHANGES:
+- Reenabled many economy based sections, now that GGG has enabled APIs and the quality of the data is good enough
+- Integrated all new uniques into the economy and given appropriate safeguards
+- Lineage gems are now fully economy tiered (with safeguards)
+- Abyss currencies are now economy tiered (with safeguards)
+- Catalysts are now fully economy tiered (with safeguards)
+
+## BASETYPE TIERING CHANGES:
+- The rule to highlight ilvl81+ normal wands now highlights different wands and is now disabled on very strict
+- Adjusted the tiering for wands, staves and spears
+- Finetuned the tiering a bit with the focus of making it more strict towards untiered bases. This mostly affects very strict and uber strict.
+
+## GEM RELATED CHANGES
+- Increased the arealevel requirement for skill and spirit gems from 78->79. This is due to level 18 gems being less common than before in T15 maps it seems.
+- Added a new rule to highlight support gems with additional highlight until you reach arealevel 79 (T15 maps). From my experience, the extra gem tiers and other changes lead to me needing a lot more uncut support gems. This rule is hidden on uber strict (note that very strict won't show uncut support gems in T15+ maps at all)
+
+----------------------------------
+# **VERSION 0.8.1** - Initial Tiering update
+----------------------------------
+
+Done some initial tiering changes based on economy and discoveries.
+This is an economy only update. Stable will be updated during the next days, once the economy data is more reliable.
+
+----------------------------------
 # **VERSION 0.8** - Third Edict Update
 ----------------------------------
 
