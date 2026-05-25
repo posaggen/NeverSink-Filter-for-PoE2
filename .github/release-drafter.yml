@@ -1,21 +1,15 @@
 template: |
   *All updates are also available through [FilterBlade](https://www.filterblade.xyz) and on the [PoE filter ladder](https://www.pathofexile.com/item-filter/ladder/follower). Major thanks to all patreon supporters to help us fund the continuous development. [Patreon](https://www.patreon.com/Neversink) supporters also receive a Patreon-exclusive [Filter-Auto-Updater](https://youtu.be/i8RJx0s0zsA).*
   
-  ## ECONOMY RELATED CHANGES:
-  - Reenabled many economy based sections, now that GGG has enabled APIs and the quality of the data is good enough
-  - Integrated all new uniques into the economy and given appropriate safeguards
-  - Lineage gems are now fully economy tiered (with safeguards)
-  - Abyss currencies are now economy tiered (with safeguards)
-  - Catalysts are now fully economy tiered (with safeguards)
+  ## TIERING ADJUSTMENTS
+  - Onboarded all new uniques
+  - Adjusted all tierlists to better match the current economy
+  - Improved safeguards for this and future leagues
   
-  ## BASETYPE TIERING CHANGES:
-  - The rule to highlight ilvl81+ normal wands now highlights different wands and is now disabled on very strict
-  - Adjusted the tiering for wands, staves and spears
-  - Finetuned the tiering a bit with the focus of making it more strict towards untiered bases. This mostly affects very strict and uber strict.
-  
-  ## GEM RELATED CHANGES
-  - Increased the arealevel requirement for skill and spirit gems from 78->79. This is due to level 18 gems being less common than before in T15 maps it seems.
-  - Added a new rule to highlight support gems with additional highlight until you reach arealevel 79 (T15 maps). From my experience, the extra gem tiers and other changes lead to me needing a lot more uncut support gems. This rule is hidden on uber strict (note that very strict won't show uncut support gems in T15+ maps at all)
+  ## MISC CHANGES
+  - Made the highlight of high tier normal/magic best bases (Obliterator bows, Ancestral Tiaras etc) less strict, as these are crucial for crafting and also sell fairly well
+  - Added a new campaign rule to highlight lesser jeweller's orbs during leveling with stronger highlight
+  - Adjusted gold stack size offsets a bit
   
   ------
 
